@@ -1,6 +1,6 @@
 <?php
 // Html Addition
-// // tableHead
+// tableHead
 $inputs = "";
 foreach ($crud->attributesList as $attribute) {
     $inputs .= "<input type=\"text\" name=\"".$attribute."\" placeholder=\"".$attribute."\"/>";
