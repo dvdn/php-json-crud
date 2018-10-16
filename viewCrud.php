@@ -14,15 +14,13 @@ if (isset($_POST["edit"])) {
     $crud->actionEdit();
 }
 if (isset($_GET["action"])) {
-    if ($_GET["action"]=="delete" && isset($_GET["id"])){
+    if ($_GET["action"]=="delete" && isset($_GET["id"])) {
         $crud->actionDelete($_GET["id"]);
     }
-    if ($_GET["action"]=="edit" && isset($_GET["id"])){
+    if ($_GET["action"]=="edit" && isset($_GET["id"])) {
         include('viewEdit.php');
     }
-    if ($_GET["action"]=="add"){
+    if ($_GET["action"]=="add") {
         include('viewAdd.php');
     }
 }
-
-?>

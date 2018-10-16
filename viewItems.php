@@ -14,7 +14,7 @@ echo <<<EOT
         <tbody>
 EOT;
 // tableData and actions
-foreach ($crud->data['persons'] as $idx => $item):
+foreach (reset($crud->data) as $idx => $item):
     $tData = "";
     foreach ($crud->attributesList as $attribute) {
         $tData .= "<td>".$item[$attribute]."</td>";

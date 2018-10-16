@@ -1,6 +1,7 @@
 <?php
 
-class Crud {
+class Crud
+{
     private $homePath;
     private $filePath;
     private $fileContent;
@@ -8,7 +9,8 @@ class Crud {
     public $listName;
     public $attributesList;
 
-    public function __construct($filePath = 'data.json') {
+    public function __construct($filePath = 'data.json')
+    {
         $this->homePath = $_SERVER['PHP_SELF'];
         if (file_exists($filePath)) {
             $this->filePath = $filePath;
@@ -19,10 +21,10 @@ class Crud {
         } else {
             throw new Exception("No file found", 1);
         }
-
     }
 
-    public function actionAdd(){
+    public function actionAdd()
+    {
         $listName = $this->listName;
         $data = $this->data;
         array_push($data[$listName], $_POST);
@@ -30,11 +32,13 @@ class Crud {
         header("Location: ".$this->homePath);
     }
 
-    public function actionRead() {
+    public function actionRead()
+    {
         return $this->data;
     }
 
-    public function actionEdit(){
+    public function actionEdit()
+    {
         if (isset($_POST["id"])) {
             $id = $_POST["id"];
             $listName = $this->listName;
@@ -54,7 +58,8 @@ class Crud {
         }
     }
 
-    public function actionDelete($id=null){
+    public function actionDelete($id=null)
+    {
         if ($id!==null && is_numeric($id) && $this->data[$this->listName][$id]) {
             $listName = $this->listName;
             $data = $this->data;
@@ -66,5 +71,3 @@ class Crud {
         }
     }
 }
-
-?>

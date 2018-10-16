@@ -16,4 +16,3 @@ echo <<<EOT
         <input type="submit" name="edit" value="Edit"/>
     </form>
 EOT;
-?>

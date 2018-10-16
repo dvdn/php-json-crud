@@ -12,4 +12,3 @@ echo <<<EOT
     <input type="submit" name="add" value="Add"/>
 </form>
 EOT;
-?>
