@@ -1,29 +1,29 @@
 {
-   "persons":{
-      "0":{
-         "firstname":"Vincent",
-         "lastname":"van Gogh",
-         "telephon":"444-456"
-      },
-      "1":{
-         "firstname":"Paul",
-         "lastname":"Gauguin ",
-         "telephon":"999-666"
-      },
-      "2":{
-         "firstname":" Jean-Auguste ",
-         "lastname":"Ingres",
-         "telephon":"555-987"
-      },
-      "3":{
-         "firstname":"Michelangelo",
-         "lastname":"Merisi",
-         "telephon":"666-822"
-      },
-      "4":{
-         "firstname":"Salvador",
-         "lastname":"Dali",
-         "telephon":"222-193"
-      }
-   }
+  "persons": [
+    {
+      "firstname": "Vincent",
+      "lastname": "van Gogh",
+      "telephon": "444-456"
+    },
+    {
+      "firstname": "Paul",
+      "lastname": "Gauguin ",
+      "telephon": "999-666"
+    },
+    {
+      "firstname": "Jean-Auguste",
+      "lastname": "Ingres",
+      "telephon": "555-987"
+    },
+    {
+      "firstname": "Michelangelo",
+      "lastname": "Merisi",
+      "telephon": "666-822"
+    },
+    {
+      "firstname": "Salvador",
+      "lastname": "Dali",
+      "telephon": "222-193"
+    }
+  ]
 }
